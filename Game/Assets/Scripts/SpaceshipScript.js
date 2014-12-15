@@ -12,3 +12,17 @@ function Update() {
         Instantiate(bullet, transform.position, Quaternion.identity);
     }
 }
+
+function OnTriggerEnter2D(obj : Collider2D) {  
+    var name = obj.gameObject.name;
+
+  
+    // If it collided with the spaceship
+    if (name == "Enemy") {
+        // Destroy itself (the enemy) to keep things simple
+        //Destroy(gameObject);
+	}
+}
+
+
+	

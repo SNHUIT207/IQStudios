@@ -29,6 +29,6 @@ function OnTriggerEnter2D(obj : Collider2D) {
     // If it collided with the spaceship
     if (name == "spaceship") {
         // Destroy itself (the enemy) to keep things simple
-        Destroy(gameObject);
+        Destroy(gameObject);Destroy(obj.gameObject);
     }
 }
